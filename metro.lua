@@ -1,26 +1,26 @@
-require ("./lib/turtle")
+require("./Lib/turtle")
 
 local function digMetroOne()
-    lib.dig3(1)
+    Lib.dig3(1)
     turtle.turnLeft()
-    lib.dig3(2)
-    lib.moveDown(2)
-    lib.dig3(2)
-    lib.turnBack()
-    lib.dig3(6)
-    lib.moveDown(1)
-    lib.turnBack()
-    lib.move(3)
+    Lib.dig3(2)
+    Lib.moveDown(2)
+    Lib.dig3(2)
+    Lib.turnBack()
+    Lib.dig3(6)
+    Lib.moveDown(1)
+    Lib.turnBack()
+    Lib.move(3)
     turtle.digDown()
-    lib.turnBack()
-    lib.moveUp(3)
-    lib.move(1)
+    Lib.turnBack()
+    Lib.moveUp(3)
+    Lib.move(1)
     turtle.turnLeft()
 end
 
 local function digMetro(value)
     for i = 1, value do
-        lib.digMetroOne()
+        Lib.digMetroOne()
     end
 end
 
