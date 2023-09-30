@@ -2,7 +2,7 @@ require("./lib/turtle")
 
 local function rectFarmAsm(x, y) -- снос прямоугольной фермы x*y
     local function harvest()     -- собирает и ставит урожай
-        if lib.plantGrownDown() then
+        if Lib.plantGrownDown() then
             turtle.digDown()
             turtle.placeDown()
         end
